@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote Application</title>
+</head>
+<body>
+    <h1>Vote Application</h1>
+    
+    <h2>Options:</h2>
+    <form action="/vote" method="POST">
+        <input type="radio" name="option" value="option1"> Option 1<br>
+        <input type="radio" name="option" value="option2"> Option 2<br>
+        <input type="radio" name="option" value="option3"> Option 3<br>
+        <br>
+        <input type="submit" value="Vote">
+    </form>
+    
+    <h2>Vote Results:</h2>
+    <ul>
+        <li>Option 1: {{ votes.option1 }}</li>
+        <li>Option 2: {{ votes.option2 }}</li>
+        <li>Option 3: {{ votes.option3 }}</li>
+    </ul>
+</body>
+</html>
